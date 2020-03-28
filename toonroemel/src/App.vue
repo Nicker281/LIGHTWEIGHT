@@ -18,7 +18,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('./assets/img/bg.jpg') no-repeat center bottom;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('assets/img/bg.jpg') no-repeat center bottom;
 background-size: cover;
 padding:0;
 min-height:100vh;
@@ -45,11 +45,11 @@ a:visited{
 }
 @font-face {
   font-family: 'font1';
-  src: url('./assets/fonts/gymkhana.ttf');
+  src: url('assets/fonts/gymkhana.ttf');
 }
 @font-face {
   font-family: 'titlefont';
-  src: url('./assets/fonts/octinsports.ttf');
+  src: url('assets/fonts/octinsports.ttf');
 }
 @media only screen and (min-width: 100px) {
     html{
