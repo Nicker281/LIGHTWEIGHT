@@ -24,11 +24,11 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="navbar-brand" href="https://instagram.com"><i class="fab fa-2x
+                    <a class="navbar-brand" href="https://www.instagram.com/lightweight.official"><i class="fab fa-2x
                      fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="https://tiktok.com"><img src="/img/tiktok.png" alt="TikTok" height="30px"></a>
+                    <a class="navbar-brand" href="https://vm.tiktok.com/GPUMKW/"><img src="/img/tiktok.png" alt="TikTok" height="30px"></a>
                 </li>
             </ul>
         </div>
