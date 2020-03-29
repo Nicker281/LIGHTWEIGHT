@@ -1,42 +1,55 @@
 header{
-    text-align: center;
     color: white;
-    background-image: url(../img/BgHome.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 95%;
     background-size: cover;
+    background-position: center;
+    background-image: url(../img/BgHome.jpg);
 }
 header .intro{
-    padding-top: 150px;
-    padding-bottom: 100px;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
 }
-header .intro .intro-title{
-    font-size:22px;
-    font-style:italic;
-    line-height:22px;
-    margin-bottom:25px;
+header .intro .intro-logo img{
+    width: 90%;
 }
 header .intro .intro-text{
-    font-size:50px;
+    font-size:75px;
     font-weight:700;
-    line-height:50px;
-    margin-bottom:25px;
+    margin: auto 0;
 }
-@media (min-width:768px){
+header .intro .intro-text a{
+    font-size:40px;
+    font-weight:100;
+    color: white;
+}
+header .intro .intro-text a:hover{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+header .intro .intro-text a:focus{
+    color: white;
+    outline: none;
+    opacity: 0.5;
+}
+header .intro .intro-text a h1:hover{
+    opacity: 0.5;
+}
+header .intro .intro-text a h1:focus{
+    opacity: 0.5;
+}
+
+@media (max-width:768px){
     header .intro{
-        padding-top:300px;
-        padding-bottom:200px
-    }
-    header .intro .intro-title{
-        font-size:40px;
-        font-style:italic;
-        line-height:40px;
-        margin-bottom:25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     header .intro .intro-text{
-        font-size:75px;
+        font-size:50px;
         font-weight:700;
-        line-height:75px;
-        margin-bottom:50px;
+        margin-bottom:25px;
     }
 }

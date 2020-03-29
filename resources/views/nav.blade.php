@@ -1,7 +1,7 @@
-    <nav class="navbar navbar-expand-lg navbar-default">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-default">
         <a class="navbar-brand" href="/"><img src="img/Logo-white.png" alt="LightWeight logo" height="35px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-2x fa-ellipsis-h"></i></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
