@@ -15,10 +15,19 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/shop', function () {
+    return view('shop');
+});
+
+Route::get('/challenges', function () {
+    return view('challenges');
+});
+
+
 Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/store', function () {
-    return view('store');
+Route::get('/contact', function () {
+    return view('contact');
 });

@@ -10,13 +10,16 @@
                     <a class="nav-link nav-ani" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-ani" href="/store">Store</a>
+                    <a class="nav-link nav-ani" href="/shop">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-ani" href="#">Challenges</a>
+                    <a class="nav-link nav-ani" href="/challenges">Challenges</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-ani" href="/about">About</a>
+                    <a class="nav-link nav-ani" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-ani" href="/contact">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">

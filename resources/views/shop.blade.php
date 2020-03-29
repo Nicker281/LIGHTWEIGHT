@@ -3,5 +3,5 @@
 @section('title', 'Store | ')
 
 @section('content')
-    <h1>Store</h1>
+    <h1>Shop</h1>
 @endsection
