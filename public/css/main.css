@@ -1,3 +1,41 @@
-h1{
-    color: aqua;
+/* Nav */
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:focus{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-ani{
+    border-bottom: solid 2px rgb(0,0,0,0);
+    padding: 0 .5rem;
+    margin: .5rem 0;
+    
+    transition: all 0.3s ease-in-out;
+}
+.navbar-dark .navbar-nav .nav-ani:hover{
+    border-bottom: solid 2px white;
+    padding: .4rem .5rem;
+    margin: 0 0;
+}
+.navbar-dark .navbar-nav .nav-ani:focus{
+    outline: none;
+    border-bottom: solid 2px white;
+    padding: .4rem .5rem;
+    margin: 0 0;
+}
+
+.navbar-brand{
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 0px;
+}
+.navbar-brand:hover{
+    opacity: 0.5;
+}
+.navbar-brand:focus{
+    opacity: 0.5;
+    outline: none;
 }
