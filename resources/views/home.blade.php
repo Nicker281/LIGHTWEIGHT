@@ -8,10 +8,10 @@
     <header>
         <div class="container">
             <div class="row intro">
-                <div class="col intro-logo">
+                <div class="col-12 col-lg-6 intro-logo">
                     <img src="img/Logo-white.png" alt="LighWeight logo">
                 </div>
-                <div class="col intro-text">
+                <div class="col-12 col-lg-6 intro-text">
                     <h1>Dream big, Set goals</h1>
                     <p>Get LightWeight</p>
                     <a href="#scroll">

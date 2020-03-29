@@ -16,7 +16,7 @@ header .intro .intro-logo img{
     width: 90%;
 }
 header .intro .intro-text{
-    font-size:75px;
+    font-size:70px;
     font-weight:700;
     margin: auto 0;
 }
@@ -42,14 +42,21 @@ header .intro .intro-text a h1:focus{
     opacity: 0.5;
 }
 
-@media (max-width:768px){
+@media (max-width:720px){
+    header{
+        background-image: url(../img/BgHomeSm.jpg);
+    }
     header .intro{
         padding-top: 50px;
         padding-bottom: 50px;
     }
     header .intro .intro-text{
-        font-size:50px;
+        font-size:40px;
         font-weight:700;
         margin-bottom:25px;
+    }
+    header .intro .intro-text h1{
+        font-size:20px;
+        margin-bottom:10px;
     }
 }
