@@ -7,8 +7,8 @@
 @section('content')
     <header>
         <div class="container">
-            <div class="row intro">
-                <div class="col intro-text">
+            <div class="row banner">
+                <div class="col banner-text">
                     <p>- Comming Soon -</p>
                     <h1>
                         "The only workout is<br>

@@ -7,15 +7,15 @@
 @section('content')
     <header>
         <div class="container">
-            <div class="row intro">
-                <div class="col-12 col-lg-6 intro-logo">
+            <div class="row banner">
+                <div class="col-12 col-lg-6 banner-logo">
                     <img src="img/Logo-white.png" alt="LighWeight logo">
                 </div>
-                <div class="col-12 col-lg-6 intro-text">
-                    <h1>Dream big, Set goals</h1>
+                <div class="col-12 col-lg-6 banner-text">
+                    <h1 class="banner-small">Dream big, Set goals</h1>
                     <p>Get LightWeight</p>
-                    <a href="#scroll">
-                        <h1>
+                    <a href="#scroll" class="banner-link">
+                        <h1 class="banner-small">
                             Explore <br>
                             <i class="fas fa-angle-double-down"></i>
                         </h1>
