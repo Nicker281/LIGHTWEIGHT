@@ -23,7 +23,6 @@ Route::get('/challenges', function () {
     return view('challenges');
 });
 
-
 Route::get('/about', function () {
     return view('about');
 });

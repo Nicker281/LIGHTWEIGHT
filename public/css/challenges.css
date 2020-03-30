@@ -1,11 +1,18 @@
 header{
     color: white;
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 95%;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/BgHome.jpg);
+    background-image: url(../img/BgChallenges.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
 }
 header .intro{
     text-align: center;
@@ -44,7 +51,7 @@ header .intro .intro-text a h1:focus{
 
 @media (max-width:720px){
     header{
-        background-image: url(../img/BgHomeSm.jpg);
+        background-image: url(../img/BgChallenges.jpg);
     }
     header .intro{
         padding-top: 50px;

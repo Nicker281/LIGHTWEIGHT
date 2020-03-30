@@ -27,14 +27,17 @@
     <section id="scroll">
         <h1>store</h1>
         <p>Hier komt een introductie naar de shop, de merch</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aliquam eos laboriosam ex velit, minus maxime, ut perspiciatis possimus quaerat quas ipsam, saepe explicabo nobis eveniet doloremque porro mollitia nulla!</p>
     </section>
     <section style="background-color:black; color:white;">
         <h1>challenge</h1>
         <p>Hier komt een introductie naar de challenges, de community</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aliquam eos laboriosam ex velit, minus maxime, ut perspiciatis possimus quaerat quas ipsam, saepe explicabo nobis eveniet doloremque porro mollitia nulla!</p>
     </section>
     <section>
         <h1>get to know us</h1>
         <p>hierkomt een korte verwijzing naar de about us</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aliquam eos laboriosam ex velit, minus maxime, ut perspiciatis possimus quaerat quas ipsam, saepe explicabo nobis eveniet doloremque porro mollitia nulla!</p>
     </section>
 @endsection
 
