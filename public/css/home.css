@@ -10,3 +10,32 @@ header{
         background-image: url(../img/BgHomeSm.jpg);
     }
 }
+
+#shop{
+    padding: 100px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/HomeStore.png);
+    background-position: left bottom;
+}
+.bgWhite{
+    background-color: rgba(255,255,255,0.7);
+}
+.imgC{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:0 0 0 .2rem rgba(255,255,255,0.7);
+}
+#imgC1{
+    background-image: url(../img/BgChallenges.jpg);
+}
+#imgC2{
+    background-image: url(../img/BgChallenges.jpg);
+}
+#imgC3{
+    background-image: url(../img/BgChallenges.jpg);
+}

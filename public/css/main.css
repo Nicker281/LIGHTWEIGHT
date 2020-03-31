@@ -2,6 +2,7 @@
 html, body{
     width: 100%;
     height: 100%;
+    background-color: white;
 }
 
 /* Nav */
@@ -76,8 +77,8 @@ header{
     width: 90%;
 }
 .banner-text{
-    font-size:70px;
-    font-weight:700;
+    font-size: 70px;
+    font-weight: 700;
     margin: auto 0;
 }
 .banner-small{
@@ -120,4 +121,46 @@ header{
         font-size:20px;
         margin-bottom:10px;
     }
+}
+
+/* Buttons */
+.btn-primary{
+    color: black;
+    padding: 5px 40px;
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
+}
+.btn-primary:focus{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
+}
+.btn-secondary{
+    color: white;
+    padding: 5px 40px;
+    font-weight: 700;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 0;
+}
+.btn-secondary:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
+}
+.btn-secondary:focus{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
 }
