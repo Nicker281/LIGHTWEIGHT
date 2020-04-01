@@ -75,10 +75,24 @@
             </div>
         </div>
     </section>
-    <section>
-        <h1>get to know us</h1>
-        <p>hierkomt een korte verwijzing naar de about us</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aliquam eos laboriosam ex velit, minus maxime, ut perspiciatis possimus quaerat quas ipsam, saepe explicabo nobis eveniet doloremque porro mollitia nulla!</p>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4"></div>
+                <div class="bgWhite col">
+                    <h1 class="text-center">Get to know us</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorem, dicta harum delectus est aut facilis necessitatibus quasi nobis maxime deserunt voluptate nulla unde voluptatem sed cupiditate iure blanditiis soluta!</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-12 col-md-4"></div>
+                <div class="text-center col">
+                    <a class="btn btn-primary" href="/challenges">Go To About Us</a>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
 
