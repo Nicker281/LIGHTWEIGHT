@@ -100,10 +100,10 @@ header{
     color: white;
     outline: none;
 }
-.banner-link p:hover{
+.banner-link h1:hover{
     opacity: 0.5;
 }
-.banner-link p:focus{
+.banner-link h1:focus{
     opacity: 0.5;
 }
 
