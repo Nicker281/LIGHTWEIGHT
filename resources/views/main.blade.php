@@ -14,7 +14,7 @@
 <body>
     @include('nav')
     @yield('content')
-    @yield('footer')
+    @include('footer')
     
     <script src="js/app.js"></script>
     @yield('js')

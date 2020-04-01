@@ -123,6 +123,33 @@ header{
     }
 }
 
+/* Footer */
+footer{
+    color: white;
+    padding: 30px 0;
+    background-color: black;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+footer a:focus{
+    color: white;
+    outline: none;
+    opacity: 0.5;
+}
+footer .bold{
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+footer .light{
+    opacity: 0.7;
+}
+
 /* Buttons */
 .btn-primary{
     color: black;

@@ -93,7 +93,7 @@
             <div class="row">
                 <div class="col-12 col-md-4"></div>
                 <div class="text-center col">
-                    <a class="btn btn-primary" href="/challenges">Go To About Us</a>
+                    <a class="btn btn-primary" href="/about">Go To About Us</a>
                 </div>
             </div>
         </div>
