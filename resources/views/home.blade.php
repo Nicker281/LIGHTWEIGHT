@@ -56,10 +56,24 @@
             </div>
         </div>
     </section>
-    <section style="background-color:black; color:white;">
-        <h1>challenge</h1>
-        <p>Hier komt een introductie naar de challenges, de community</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aliquam eos laboriosam ex velit, minus maxime, ut perspiciatis possimus quaerat quas ipsam, saepe explicabo nobis eveniet doloremque porro mollitia nulla!</p>
+    <section id="challenges">
+        <div class="container">
+            <div class="row">
+                <div class="bgBlack col">
+                    <h1 class="text-center">Challenge us &amp; yourself</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorem, dicta harum delectus est aut facilis necessitatibus quasi nobis maxime deserunt voluptate nulla unde voluptatem sed cupiditate iure blanditiis soluta!</p>
+                </div>
+                <div class="col-12 col-md-4"></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="text-center col">
+                    <a class="btn btn-secondary" href="/challenges">Go To Challenges</a>
+                </div>
+                <div class="col-12 col-md-4"></div>
+            </div>
+        </div>
     </section>
     <section>
         <h1>get to know us</h1>

@@ -156,11 +156,11 @@ header{
     color: black;
     background-color: white;
     border: 2px solid white;
-    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
+    box-shadow:0 0 0 .2rem rgba(255,255,255,.4);
 }
 .btn-secondary:focus{
     color: black;
     background-color: white;
     border: 2px solid white;
-    box-shadow:0 0 0 .2rem rgba(0,0,0,.3);
+    box-shadow:0 0 0 .2rem rgba(255,255,255,.4);
 }
