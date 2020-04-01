@@ -36,14 +36,18 @@
             <br>
             <div class="row">
                 <div class="col-12 col-md-4"></div>
-                <div class="justify-content-center col-12 col-md-4 col-lg">
-                    <div class="imgC" id="imgC1"></div>
-                </div>
-                <div class="justify-content-center col-12 col-md-4 col-lg">
-                    <div class="imgC" id="imgC2"></div>
-                </div>
-                <div class="justify-content-center col-12 offset-0 col-md-8 offset-md-4 col-lg offset-lg-0">
-                    <div class="imgC" id="imgC3"></div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="justify-content-center col-12 col-md-6 col-lg-4">
+                            <div class="imgC" id="imgC1"></div>
+                        </div>
+                        <div class="justify-content-center col-12 col-md-6 col-lg-4">
+                            <div class="imgC" id="imgC2"></div>
+                        </div>
+                        <div class="justify-content-center col-12 col-md-12 col-lg-4">
+                            <div class="imgC" id="imgC3"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <br>
