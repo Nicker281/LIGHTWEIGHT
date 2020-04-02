@@ -1,5 +1,5 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-default">
-        <a class="navbar-brand" href="/"><img src="img/Logo-white.png" alt="LightWeight logo" height="35px"></a>
+        <a class="navbar-brand" href="/"><img src="{{ asset('img/Logo-white.png') }}" alt="LightWeight logo" height="35px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-2x fa-ellipsis-h"></i></span>
         </button>
@@ -28,7 +28,7 @@
                      fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="https://vm.tiktok.com/GPUMKW/"><img src="/img/tiktok.png" alt="TikTok" height="30px"></a>
+                    <a class="navbar-brand" href="https://vm.tiktok.com/GPUMKW/"><img src="{{ asset('/img/tiktok.png') }}" alt="TikTok" height="30px"></a>
                 </li>
             </ul>
         </div>

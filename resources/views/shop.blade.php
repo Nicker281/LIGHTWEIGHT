@@ -3,7 +3,7 @@
 @section('title', 'Store | ')
 
 @section('css')
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
 @endsection
 
 @section('content')
@@ -41,5 +41,5 @@
 @endsection
 
 @section('js')
-    <script src="js/scroll.js"></script>
+    <script src="{{ asset('js/scroll.js') }}"></script>
 @endsection

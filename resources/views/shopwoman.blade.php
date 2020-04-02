@@ -33,5 +33,5 @@
 @endsection
 
 @section('js')
-    <script src="js/scroll.js"></script>
+    <script src="{{ asset('js/scroll.js') }}"></script>
 @endsection

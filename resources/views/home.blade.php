@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('css')
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row banner">
                 <div class="col-12 col-lg-6 banner-logo">
-                    <img src="img/Logo-white.png" alt="LighWeight logo">
+                    <img src="{{ asset('img/Logo-white.png') }}" alt="LighWeight logo">
                 </div>
                 <div class="col-12 col-lg-6 banner-text">
                     <h1 class="banner-small">Dream big, Set goals</h1>
@@ -101,5 +101,5 @@
 @endsection
 
 @section('js')
-    <script src="js/scroll.js"></script>
+    <script src="{{ asset('js/scroll.js') }}"></script>
 @endsection

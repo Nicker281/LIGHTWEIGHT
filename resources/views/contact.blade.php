@@ -1,9 +1,9 @@
 @extends('main')
 
-@section('title', 'About | ')
+@section('title', 'Contact | ')
 
 @section('css')
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 @endsection
 
 @section('content')
