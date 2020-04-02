@@ -14,26 +14,27 @@
                     <form action="">
                         <div class="form-group">
                             <label for="INname">Name</label>
-                            <input type="text" class="form-control" id="INname" placeholder="Mr. LightWeight">
+                            <input type="text" class="form-control" id="INname" placeholder="Mr. LightWeight" required>
                         </div>
                         <div class="form-group">
                             <label for="INmail">Email address</label>
-                            <input type="email" class="form-control" id="INmail" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="INmail" placeholder="name@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="INsubject">Subject</label>
-                            <select id="INsubject" class="form-control">
-                                <option selected>- Choose a subject -</option>
-                                <option>Clothing</option>
-                                <option>Trainings</option>
-                                <option>Business</option>
-                                <option>Media</option>
-                                <option>Others</option>
+                            <select id="INsubject" class="form-control" required>
+                                <option disabled selected value="other">- Choose a subject -</option>
+                                <option value="order">Order</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="training">Trainings</option>
+                                <option value="business">Business</option>
+                                <option value="media">Media</option>
+                                <option value="other">Others</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="INmessage">Message</label>
-                            <textarea class="form-control" id="INmessage" rows="5" placeholder="Message: Just Do It"></textarea>
+                            <textarea class="form-control" id="INmessage" rows="5" placeholder="Message: Just Do It" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
