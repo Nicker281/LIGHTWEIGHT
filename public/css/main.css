@@ -55,6 +55,16 @@ html, body{
     opacity: 0.5;
     outline: none;
 }
+.dropdown-menu{
+    width: 350px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-menu .disabled{
+    color: black;
+    font-weight: 700;
+}
 
 /* Header/Banner */
 header{

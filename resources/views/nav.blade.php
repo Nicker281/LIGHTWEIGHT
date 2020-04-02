@@ -9,8 +9,28 @@
                 <li class="nav-item">
                     <a class="nav-link nav-ani" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-ani" href="/shop">Shop</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="dropdown-item disabled">Woman</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/shop/woman">All</a>
+                                    <a class="dropdown-item" href="/shop/woman">Tops</a>
+                                    <a class="dropdown-item" href="/shop/woman">Bottoms</a>
+                                </div>
+                                <div class="col">
+                                    <p class="dropdown-item disabled">Men</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/shop/men">All</a>
+                                    <a class="dropdown-item" href="/shop/men">Tops</a>
+                                    <a class="dropdown-item" href="/shop/men">Bottoms</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-ani" href="/challenges">Challenges</a>
