@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row banner">
                 <div class="col banner-text">
-                    <p>- Comming Soon -</p>
+                    <p>- Coming Soon -</p>
                     <h1>
                         "The only workout is<br>
                         the one that did not happen"<br>
