@@ -8,13 +8,12 @@
     <header>
         <div class="container">
             <div class="row banner">
-                <div class="col banner-text">
-                    <p>- Coming Soon -</p>
-                    <h1>
-                        "The only workout is<br>
-                        the one that did not happen"<br>
-                        ~LightWeight
-                    </h1>
+                <div class="col-12 col-md-6 align-self-center">
+                    <h1>Newest Challenge</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores praesentium nam labore officiis, blanditiis! Omnis tempora distinctio architecto hic, a beatae quas necessitatibus asperiores perferendis nemo dolorem, velit iusto. Eius.</p>
+                </div>
+                <div class="col-12 col-md-6  align-self-center">
+                    <img src="/img/challenge1.png" alt="Alphabet challenge" width="100%">
                 </div>
             </div>
         </div>

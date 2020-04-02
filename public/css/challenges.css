@@ -4,7 +4,9 @@ header{
 }
 header .container{
     background-color: rgba(0, 0, 0, 0.5);
-    max-width: 700px;
+}
+header .banner{
+    text-align: left;
 }
 footer{
     display: none;
