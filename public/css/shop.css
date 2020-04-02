@@ -2,6 +2,7 @@ header{
     background-image: url(../img/BgShop.jpg);
 }
 header .btn-secondary{
+    font-size: 20px;
     background-color: rgba(0,0,0,0.5);
 }
 header .btn-secondary:hover{
