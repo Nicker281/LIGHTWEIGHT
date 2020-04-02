@@ -3,20 +3,12 @@
 @section('title', 'Store | ')
 
 @section('css')
-    <link rel="stylesheet" href="css/shopwoman.css">
+    <link rel="stylesheet" href="{{ asset('css/shopwoman.css') }}">
 @endsection
 
 @section('content')
     <header>
         <div class="container">
-            <div class="row banner">
-                <div class="col">
-                    <a class="btn btn-secondary" href="/shop">Woman</a>
-                </div>
-                <div class="col">
-                    <a class="btn btn-secondary" href="/shop">Men</a>
-                </div>
-            </div>
             <div class="row banner">
                 <div class="col">
                     <a href="#shop" class="banner-link">
