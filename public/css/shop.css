@@ -11,3 +11,8 @@ header .btn-secondary:hover{
 header .btn-secondary:focus{
     background-color: rgba(255,255,255,0.5);
 }
+@media (max-width:720px){
+    header{
+        background-image: url(../img/BgShopSm.jpg);
+    }
+}
