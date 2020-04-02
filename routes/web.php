@@ -18,6 +18,12 @@ Route::get('/', function () {
 Route::get('/shop', function () {
     return view('shop');
 });
+Route::get('/shop/woman', function () {
+    return view('shopwoman');
+});
+Route::get('/shop/men', function () {
+    return view('shopmen');
+});
 
 Route::get('/challenges', function () {
     return view('challenges');

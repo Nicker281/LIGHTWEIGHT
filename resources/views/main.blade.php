@@ -6,9 +6,9 @@
     <title>@yield('title')LightWeight</title>
     
     <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     @yield('css')
 </head>
 <body>

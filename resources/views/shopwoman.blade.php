@@ -3,7 +3,7 @@
 @section('title', 'Store | ')
 
 @section('css')
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/shopwoman.css">
 @endsection
 
 @section('content')
@@ -11,10 +11,10 @@
         <div class="container">
             <div class="row banner">
                 <div class="col">
-                    <a class="btn btn-secondary" href="/shop/woman">Woman</a>
+                    <a class="btn btn-secondary" href="/shop">Woman</a>
                 </div>
                 <div class="col">
-                    <a class="btn btn-secondary" href="/shop/men">Men</a>
+                    <a class="btn btn-secondary" href="/shop">Men</a>
                 </div>
             </div>
             <div class="row banner">
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Shop under construction</h1>
+                    <h1>Shop for woman under construction</h1>
                 </div>
             </div>
         </div>
