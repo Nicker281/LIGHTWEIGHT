@@ -1,5 +1,4 @@
 header{
-    position: fixed;
     background-image: url(../img/BgChallenges.jpg);
 }
 header .container{
@@ -7,7 +6,4 @@ header .container{
 }
 header .banner{
     text-align: left;
-}
-footer{
-    display: none;
 }
