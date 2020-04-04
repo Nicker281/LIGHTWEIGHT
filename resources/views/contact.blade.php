@@ -12,6 +12,7 @@
             <div class="row banner bgForm">
                 <div class="col-12 col-md-8 col-lg">
                     <form action="">
+                        @csrf
                         <div class="form-group">
                             <label for="INname">Name</label>
                             <input type="text" class="form-control" id="INname" placeholder="Mr. LightWeight" required>
