@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-12 col-md-4"></div>
                 <div class="text-center col">
-                    <a class="btn btn-primary" href="/shop">Go To Shop</a>
+                    <a class="btn btn-primary" href="/shop/all">Go To Shop</a>
                 </div>
             </div>
         </div>

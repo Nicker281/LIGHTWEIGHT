@@ -4,19 +4,23 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
+    <style>
+        header{
+            background-image: url('{{ asset($style->back) }}');
+            align-items: {{ $style->align }};
+        }
+        @media (max-width:720px){
+            header{
+                background-image: url('{{ asset($style->backSmall) }}');
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
     <header>
         <div class="container">
-            <div class="row banner">
-                <div class="col">
-                    <a class="btn btn-secondary" href="/shop/woman">Woman</a>
-                </div>
-                <div class="col">
-                    <a class="btn btn-secondary" href="/shop/men">Men</a>
-                </div>
-            </div>
+            {!! $header !!}
             <div class="row banner">
                 <div class="col">
                     <a href="#shop" class="banner-link">
@@ -33,7 +37,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Shop under construction</h1>
+                    <h1>{{ $shop }}</h1>
+                    @foreach($articles as $article)
+                    <p>{{ $article }}</p>
+                    @endforeach
                 </div>
             </div>
         </div>

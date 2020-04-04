@@ -74,6 +74,7 @@ header{
     min-height: 95%;
     background-size: cover;
     background-position: center;
+    background-image: url(../img/BgHome.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
