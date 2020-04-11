@@ -23,6 +23,7 @@ class Shop extends Controller
         return $view;
     }
     
+    //Get Shop views
     public function ShowAll(){
         $style = (object)[
             'back' => '/img/BgShop.jpg',
@@ -37,6 +38,10 @@ class Shop extends Controller
                     <a class=\"btn btn-secondary\" href=\"/shop/men\">Men</a>\n
                 </div>\n
             </div>";
+        $titles = [
+            'LightWeight for Women',
+            'LightWeight for Men'
+        ];
         
         $curl = curl_init();
         curl_setopt_array($curl, [
@@ -49,12 +54,16 @@ class Shop extends Controller
         $resp = curl_exec($curl);
         $result = json_decode($resp, true);
         curl_close($curl);
+        
+        $artW = $this->GetArtWomen($result);
+        $artM = $this->GetArtMen($result);
+        $articles = [$artW, $artM];
 
         $data = [
             'style' => $style,
             'header' => $header,
-            'shop' => 'Shop under construction',
-            'articles' => $result
+            'titles' => $titles,
+            'articles' => $articles
         ];
         
         return view('shop', $data);
@@ -88,10 +97,52 @@ class Shop extends Controller
             'shop' => 'Shop for men under construction',
             'articles' => ['1','2','3','4','5']
         ];
-        
         return view('shop', $data);
     }
     
+    //Get products
+    public function GetArtWomen($articles){
+        $i = 0;
+        $artW = [];
+        $prices = [50, 40, 40, 55, 50, 30, 30, 30, 30, 30,
+                  50, 50, 40, 40, 25, 25, 30, 30, 50, 50];
+        
+        foreach($articles['result'] as $art){
+            if($i < 10){
+                array_push($artW, [
+                    'id' => $art['id'],
+                    'name' => $art['name'],
+                    'img' => $art['thumbnail_url'],
+                    'price' => $prices[$i]
+                ]);
+            }
+            $i++;
+        }
+        
+        return $artW;
+    }
+    public function GetArtMen($articles){
+        $i = 0;
+        $artM = [];
+        $prices = [50, 40, 40, 55, 50, 30, 30, 30, 30, 30,
+                  50, 50, 40, 40, 25, 25, 30, 30, 50, 50];
+        
+        foreach($articles['result'] as $art){
+            if($i >= 10){
+                array_push($artM, [
+                    'id' => $art['id'],
+                    'name' => $art['name'],
+                    'img' => $art['thumbnail_url'],
+                    'price' => $prices[$i]
+                ]);
+            }
+            $i++;
+        }
+        
+        return $artM;
+    }
+    
+    //Get detail view
     public function Detail($id){
         $data = [
             'id' => $id
