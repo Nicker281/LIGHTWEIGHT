@@ -28,6 +28,13 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+<<<<<<< HEAD
 Route::post('/contact', function () {
     return redirect('/');
 });
+=======
+
+Route::post('/contact', function()  {
+    return view('contact');
+});
+>>>>>>> 61ca93e1cb1d2e9e687905b11834223a1acbe5f8
