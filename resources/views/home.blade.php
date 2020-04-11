@@ -9,11 +9,11 @@
         <div class="container">
             <div class="row banner">
                 <div class="col-12 col-lg-6 banner-logo">
-                    <img src="{{ asset('img/Logo-white.png') }}" alt="LighWeight logo">
+                    <img src="{{ asset('img/LWvertical_Transparent BG.png') }}" alt="LighWeight logo">
                 </div>
                 <div class="col-12 col-lg-6 banner-text">
                     <h1 class="banner-small">Dream big, Set goals</h1>
-                    <p>Get LightWeight</p>
+                    <p>Get Lightweight</p>
                     <a href="#shop" class="banner-link">
                         <h1 class="banner-small">
                             Explore <br>
@@ -30,7 +30,7 @@
                 <div class="col-12 col-md-4"></div>
                 <div class="bgWhite col">
                     <h1 class="text-center">Visit our shop</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorem, dicta harum delectus est aut facilis necessitatibus quasi nobis maxime deserunt voluptate nulla unde voluptatem sed cupiditate iure blanditiis soluta!</p>
+                    <p class="text-center">This goes to our shop. We are partnered with a well known print company to ensure the best quality in prints aswell as clothing. The packaging materials are either recyclable or biodegradable. Bubble wraps are made from a minimum of 15% recycled plastic and 10% post-consumer content. The kraft tubes are made from 70-100% post-consumer recycled content and 0-30% secondary recycled content. So you can have your mind at ease while you shop.</p>
                 </div>
             </div>
             <br>
@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="bgBlack col">
                     <h1 class="text-center">Challenge us &amp; yourself</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorem, dicta harum delectus est aut facilis necessitatibus quasi nobis maxime deserunt voluptate nulla unde voluptatem sed cupiditate iure blanditiis soluta!</p>
+                    <p class="text-center">Here you will find our latest challenges. Feel free to challenge us aswell!</p>
                 </div>
                 <div class="col-12 col-md-4"></div>
             </div>
@@ -85,7 +85,7 @@
                 <div class="col-12 col-md-4"></div>
                 <div class="bgWhite col">
                     <h1 class="text-center">Get to know us</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorem, dicta harum delectus est aut facilis necessitatibus quasi nobis maxime deserunt voluptate nulla unde voluptatem sed cupiditate iure blanditiis soluta!</p>
+                    <p class="text-center">We are trying to be as transparant as possible, we are all putting our heart and soul in this! So if you want to know more about us, you can read it here.</p>
                 </div>
             </div>
             <br>

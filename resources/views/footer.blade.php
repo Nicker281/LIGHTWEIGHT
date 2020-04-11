@@ -15,7 +15,7 @@
                         <a href="mailto:info@lightweight.be">info@lightweight.be</a>
                     </p>
                 </div>
-                <div class="col">
+                    <div class="col">
                     <p class="bold text-right">Socials</p>
                     <p class="text-right">
                         <a href="https://www.instagram.com/lightweight.official">Instagram</a>

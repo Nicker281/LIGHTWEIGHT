@@ -10,7 +10,7 @@
             <div class="row banner">
                 <div class="col-12 col-md-6 align-self-center">
                     <h1>Newest Challenge</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores praesentium nam labore officiis, blanditiis! Omnis tempora distinctio architecto hic, a beatae quas necessitatibus asperiores perferendis nemo dolorem, velit iusto. Eius.</p>
+                    <p>Our latest challenge is the death by alphabet challenge! This means you have to perform the following workout according to your own name. Succes!.</p>
                 </div>
                 <div class="col-12 col-md-6  align-self-center">
                     <img src="{{ asset('/img/challenge1.png') }}" alt="Alphabet challenge" width="100%">

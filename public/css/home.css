@@ -48,13 +48,15 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow:0 0 0 .2rem rgba(255,255,255,0.7);
+    background-color: white;
 }
 #imgC1{
-    background-image: url(../img/BgChallenges.jpg);
+    background-image: url(../img/lwsportbra.png);
+
 }
 #imgC2{
-    background-image: url(../img/BgChallenges.jpg);
+    background-image: url(../img/lwtshirt.jpg   );
 }
 #imgC3{
-    background-image: url(../img/BgChallenges.jpg);
+    background-image: url(../img/lwtshirtfemale.png);
 }
