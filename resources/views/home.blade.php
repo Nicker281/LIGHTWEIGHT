@@ -9,7 +9,10 @@
         <div class="container">
             <div class="row banner">
                 <div class="col-12 col-lg-6 banner-logo">
-                    <img src="{{ asset('img/LWvertical_Transparent BG.png') }}" alt="LighWeight logo">
+                    <div class="LOGO">
+                        <img src="{{ asset('img/LWvertical.png') }}" alt="lwLOGO";>
+                        <img src="{{ asset('img/grad.png') }}" class="img-top" alt="lwLOGOgrad";>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6 banner-text">
                     <h1 class="banner-small">Dream big, Set goals</h1>
