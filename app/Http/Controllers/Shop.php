@@ -7,8 +7,8 @@ class Shop extends Controller
     public function Show($shop)
     {
         switch($shop){
-            case "woman":
-                $view = $this->ShowWoman();
+            case "women":
+                $view = $this->ShowWomen();
                 break;
             case "men":
                 $view = $this->ShowMen();
@@ -32,7 +32,7 @@ class Shop extends Controller
         ];
         $header = "<div class=\"row banner\">\n
                 <div class=\"col\">\n
-                    <a class=\"btn btn-secondary\" href=\"/shop/woman\">Woman</a>\n
+                    <a class=\"btn btn-secondary\" href=\"/shop/women\">Women</a>\n
                 </div>\n
                 <div class=\"col\">\n
                     <a class=\"btn btn-secondary\" href=\"/shop/men\">Men</a>\n
@@ -42,7 +42,105 @@ class Shop extends Controller
             'LightWeight for Women',
             'LightWeight for Men'
         ];
+        $scrolls = [
+            'Women',
+            'Men'
+        ];
         
+        $result = $this->GetArt();
+        $artW = $this->GetArtWomen($result);
+        $artM = $this->GetArtMen($result);
+        $articles = [$artW, $artM];
+
+        $data = [
+            'style' => $style,
+            'header' => $header,
+            'titles' => $titles,
+            'scrolls' => $scrolls,
+            'articles' => $articles
+        ];
+        
+        return view('shop', $data);
+    }
+    public function ShowWomen(){
+        $style = (object)[
+            'back' => '/img/BgShopWoman.jpg',
+            'backSmall' => '/img/BgShopWoman.jpg',
+            'align' => "flex-end"
+        ];
+        
+        $titles = [
+            'LightWeight Tops',
+            'LightWeight Bottoms'
+        ];
+        $scrolls = [
+            'tops',
+            'bottoms'
+        ];
+        
+        $result = $this->GetArt();
+        $artW = $this->GetArtWomen($result);
+        $artTop = [];
+        $artBot = [];
+        foreach($artW as $art){
+            if(strpos($art['name'], 'Bra') || strpos($art['name'], 'Hoodie') || strpos($art['name'], 'Top') || strpos($art['name'], 'T-Shirt')){
+                array_push($artTop, $art);
+            }else{
+                array_push($artBot, $art);
+            }
+        }
+        $articles = [$artTop, $artBot];
+        
+        $data = [
+            'style' => $style,
+            'header' => '',
+            'titles' => $titles,
+            'scrolls' => $scrolls,
+            'articles' => $articles
+        ];
+        return view('shop', $data);
+    }
+    public function ShowMen(){
+        $style = (object)[
+            'back' => '/img/BgShopMan.jpg',
+            'backSmall' => '/img/BgShopMan.jpg',
+            'align' => 'flex-end'
+        ];
+        
+        $titles = [
+            'LightWeight Tops',
+            'LightWeight Bottoms'
+        ];
+        $scrolls = [
+            'tops',
+            'bottoms'
+        ];
+        
+        $result = $this->GetArt();
+        $artW = $this->GetArtMen($result);
+        $artTop = [];
+        $artBot = [];
+        foreach($artW as $art){
+            if(strpos($art['name'], 'Hoodie') || strpos($art['name'], 'Top') || strpos($art['name'], 'T-Shirt')){
+                array_push($artTop, $art);
+            }else{
+                array_push($artBot, $art);
+            }
+        }
+        $articles = [$artTop, $artBot];
+        
+        $data = [
+            'style' => $style,
+            'header' => '',
+            'titles' => $titles,
+            'scrolls' => $scrolls,
+            'articles' => $articles
+        ];
+        return view('shop', $data);
+    }
+    
+    //Get products
+    public function GetArt(){
         $curl = curl_init();
         curl_setopt_array($curl, [
             CURLOPT_RETURNTRANSFER => 1,
@@ -55,57 +153,13 @@ class Shop extends Controller
         $result = json_decode($resp, true);
         curl_close($curl);
         
-        $artW = $this->GetArtWomen($result);
-        $artM = $this->GetArtMen($result);
-        $articles = [$artW, $artM];
-
-        $data = [
-            'style' => $style,
-            'header' => $header,
-            'titles' => $titles,
-            'articles' => $articles
-        ];
-        
-        return view('shop', $data);
+        return $result;
     }
-    public function ShowWoman(){
-        $style = (object)[
-            'back' => '/img/BgShopWoman.jpg',
-            'backSmall' => '/img/BgShopWoman.jpg',
-            'align' => "flex-end"
-        ];
-        
-        $data = [
-            'style' => $style,
-            'header' => '',
-            'shop' => 'Shop for woman under construction',
-            'articles' => ['1','2','3','4','5']
-        ];
-        
-        return view('shop', $data);
-    }
-    public function ShowMen(){
-        $style = (object)[
-            'back' => '/img/BgShopMan.jpg',
-            'backSmall' => '/img/BgShopMan.jpg',
-            'align' => 'flex-end'
-        ];
-        
-        $data = [
-            'style' => $style,
-            'header' => '',
-            'shop' => 'Shop for men under construction',
-            'articles' => ['1','2','3','4','5']
-        ];
-        return view('shop', $data);
-    }
-    
-    //Get products
     public function GetArtWomen($articles){
         $i = 0;
         $artW = [];
-        $prices = [50, 40, 40, 55, 50, 30, 30, 30, 30, 30,
-                  50, 50, 40, 40, 25, 25, 30, 30, 50, 50];
+        $prices = ["50,00", "40,00", "40,00", "55,00", "50,00", "30,00", "30,00", "30,00", "30,00", "30,00",
+                  "50,00", "50,00", "40,00", "40,00", "25,00", "25,00", "30,00", "30,00", "50,00", "50,00"];
         
         foreach($articles['result'] as $art){
             if($i < 10){
@@ -124,8 +178,8 @@ class Shop extends Controller
     public function GetArtMen($articles){
         $i = 0;
         $artM = [];
-        $prices = [50, 40, 40, 55, 50, 30, 30, 30, 30, 30,
-                  50, 50, 40, 40, 25, 25, 30, 30, 50, 50];
+        $prices = ["50,00", "40,00", "40,00", "55,00", "50,00", "30,00", "30,00", "30,00", "30,00", "30,00",
+                  "50,00", "50,00", "40,00", "40,00", "25,00", "25,00", "30,00", "30,00", "50,00", "50,00"];
         
         foreach($articles['result'] as $art){
             if($i >= 10){

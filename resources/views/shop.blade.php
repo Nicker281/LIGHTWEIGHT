@@ -36,7 +36,7 @@
     <section id="shop">
         <div class="container">
             @for($i = 0; $i < count($titles); $i++)
-            <div class="row">
+            <div class="row" id="{{ $scrolls[$i] }}">
                 <div class="col-12">
                     <h1>{{ $titles[$i] }}</h1>
                     <hr>
@@ -47,7 +47,7 @@
                         <img src="{{ $art['img'] }}" alt="{{ $art['name'] }}" width="90%">
                         <p>
                             {{ $art['name'] }} <br>
-                            €{{ $art['price'] }},00
+                            €{{ $art['price'] }}
                         </p>
                     </a>
                 </div>

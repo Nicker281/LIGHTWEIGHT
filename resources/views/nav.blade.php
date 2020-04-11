@@ -15,18 +15,18 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <p class="dropdown-item disabled">Woman</p>
+                                    <p class="dropdown-item disabled">Women</p>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/shop/woman">All</a>
-                                    <a class="dropdown-item" href="/shop/woman">Tops</a>
-                                    <a class="dropdown-item" href="/shop/woman">Bottoms</a>
+                                    <a class="dropdown-item" href="/shop/women">All</a>
+                                    <!--<a class="dropdown-item" href="/shop/women">Tops</a>
+                                    <a class="dropdown-item" href="/shop/women">Bottoms</a>-->
                                 </div>
                                 <div class="col">
                                     <p class="dropdown-item disabled">Men</p>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="/shop/men">All</a>
-                                    <a class="dropdown-item" href="/shop/men">Tops</a>
-                                    <a class="dropdown-item" href="/shop/men">Bottoms</a>
+                                    <!--<a class="dropdown-item" href="/shop/men">Tops</a>
+                                    <a class="dropdown-item" href="/shop/men">Bottoms</a>-->
                                 </div>
                             </div>
                         </div>
