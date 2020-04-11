@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/shop/{shop}', 'Shop@show');
+Route::get('/shop/{shop}', 'Shop@Show');
 
 Route::get('/challenges', function () {
     return view('challenges');
@@ -27,4 +27,7 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('contact');
+});
+Route::post('/contact', function () {
+    return redirect('/');
 });

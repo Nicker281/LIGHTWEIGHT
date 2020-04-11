@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', 'Store | ')
+@section('title', 'Shop | ')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
@@ -38,10 +38,17 @@
             <div class="row">
                 <div class="col">
                     <h1>{{ $shop }}</h1>
-                    @foreach($articles as $article)
-                    <p>{{ $article }}</p>
-                    @endforeach
                 </div>
+            </div>
+            <div class="row">
+                @foreach($articles['result'] as $art)
+                <div class="col-3">
+                    <a href="/shop/{{ $art['id'] }}">
+                        <img src="{{ $art['thumbnail_url'] }}" alt="{{ $art['name'] }}" width="90%">
+                        <p>{{ $art['name'] }}</p>
+                    </a>
+                </div>
+                @endforeach
             </div>
         </div>
     </section>

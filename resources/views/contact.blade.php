@@ -11,19 +11,19 @@
         <div class="container">
             <div class="row banner bgForm">
                 <div class="col-12 col-md-8 col-lg">
-                    <form action="">
+                    <form action="/contact" method="post">
                         @csrf
                         <div class="form-group">
-                            <label for="INname">Name</label>
-                            <input type="text" class="form-control" id="INname" placeholder="Mr. LightWeight" required>
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Mr. LightWeight" required>
                         </div>
                         <div class="form-group">
-                            <label for="INmail">Email address</label>
-                            <input type="email" class="form-control" id="INmail" placeholder="name@example.com" required>
+                            <label for="mail">Email address</label>
+                            <input type="email" class="form-control" id="mail" name="email" placeholder="name@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="INsubject">Subject</label>
-                            <select id="INsubject" class="form-control" required>
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" class="form-control" required>
                                 <option disabled selected value="other">- Choose a subject -</option>
                                 <option value="order">Order</option>
                                 <option value="clothing">Clothing</option>
@@ -34,8 +34,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="INmessage">Message</label>
-                            <textarea class="form-control" id="INmessage" rows="5" placeholder="Message: Just Do It" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message: Just Do It" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 class Shop extends Controller
 {
-    public function show($shop)
+    public function Show($shop)
     {
         switch($shop){
             case "woman":
@@ -13,19 +13,22 @@ class Shop extends Controller
             case "men":
                 $view = $this->ShowMen();
                 break;
-            default:
+            case "all":
                 $view = $this->ShowAll();
+                break;
+            default:
+                $view = $this->Detail($shop);
                 break;
         }
         return $view;
     }
     
     public function ShowAll(){
-        $style = (object) array(
+        $style = (object)[
             'back' => '/img/BgShop.jpg',
             'backSmall' => '/img/BgShopSm.jpg',
             'align' => "center"
-        );
+        ];
         $header = "<div class=\"row banner\">\n
                 <div class=\"col\">\n
                     <a class=\"btn btn-secondary\" href=\"/shop/woman\">Woman</a>\n
@@ -35,21 +38,33 @@ class Shop extends Controller
                 </div>\n
             </div>";
         
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => 'https://api.printful.com/store/products',
+            CURLOPT_USERPWD => 'rhcn1s72-o6zi-lwkm:yg2j-olz5f3y5hztm',
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false
+        ]);
+        $resp = curl_exec($curl);
+        $result = json_decode($resp, true);
+        curl_close($curl);
+
         $data = [
             'style' => $style,
             'header' => $header,
             'shop' => 'Shop under construction',
-            'articles' => ['1','2','3','4','5']
+            'articles' => $result
         ];
         
         return view('shop', $data);
     }
     public function ShowWoman(){
-        $style = (object) array(
+        $style = (object)[
             'back' => '/img/BgShopWoman.jpg',
             'backSmall' => '/img/BgShopWoman.jpg',
             'align' => "flex-end"
-        );
+        ];
         
         $data = [
             'style' => $style,
@@ -61,11 +76,11 @@ class Shop extends Controller
         return view('shop', $data);
     }
     public function ShowMen(){
-        $style = (object) array(
+        $style = (object)[
             'back' => '/img/BgShopMan.jpg',
             'backSmall' => '/img/BgShopMan.jpg',
             'align' => 'flex-end'
-        );
+        ];
         
         $data = [
             'style' => $style,
@@ -75,5 +90,12 @@ class Shop extends Controller
         ];
         
         return view('shop', $data);
+    }
+    
+    public function Detail($id){
+        $data = [
+            'id' => $id
+        ];
+        return view('detail', $data);
     }
 }
