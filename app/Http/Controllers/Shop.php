@@ -198,8 +198,43 @@ class Shop extends Controller
     
     //Get detail view
     public function Detail($id){
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => 'https://api.printful.com/store/products/' . $id,
+            CURLOPT_USERPWD => 'rhcn1s72-o6zi-lwkm:yg2j-olz5f3y5hztm',
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false
+        ]);
+        $resp = curl_exec($curl);
+        $result = json_decode($resp, true);
+        curl_close($curl);
+        
+        $sizes = [];
+        foreach($result['result']['sync_variants'] as $var){
+            $split1 = explode("-", $var['name']);
+            $split2 = explode("/", $split1[count($split1)-1]);
+            
+            if (in_array(trim($split2[count($split2)-1]), $sizes) == false) {
+                array_push($sizes, trim($split2[count($split2)-1]));
+            }
+        }
+        
+        $colors = [];
+        foreach($result['result']['sync_variants'] as $var){
+            $split1 = explode("-", $var['name']);
+            $split2 = explode("/", $split1[count($split1)-1]);
+            
+            if (in_array(trim($split2[0]), $colors) == false) {
+                array_push($colors, trim($split2[0]));
+            }
+        }
+        
         $data = [
-            'id' => $id
+            'name' => $result['result']['sync_product']['name'],
+            'img' => $result['result']['sync_product']['thumbnail_url'],
+            'sizes' => $sizes,
+            'colors' => $colors
         ];
         return view('detail', $data);
     }
