@@ -12,7 +12,7 @@
                 <div class="col">
                     <p class="light text-center">
                         &copy LightWeight 2020 <br>
-                        info&#64;lightweight.be
+                        <a href="mailto:info@lightweight.be">info@lightweight.be</a>
                     </p>
                 </div>
                 <div class="col">
