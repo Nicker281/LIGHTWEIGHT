@@ -8,3 +8,25 @@ header .btn-secondary:hover{
 header .btn-secondary:focus{
     background-color: rgba(255,255,255,0.5);
 }
+
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+a:focus{
+    color: black;
+    outline: none;
+}
+
+section .row{
+    margin: 30px auto;
+    margin-top: 100px;
+}
+
+hr{
+    border: 2px solid black;
+    border-radius: 2px;
+}

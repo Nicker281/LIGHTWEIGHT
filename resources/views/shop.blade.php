@@ -35,21 +35,25 @@
     </header>
     <section id="shop">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>{{ $shop }}</h1>
+            @for($i = 0; $i < count($titles); $i++)
+            <div class="row" id="{{ $scrolls[$i] }}">
+                <div class="col-12">
+                    <h1>{{ $titles[$i] }}</h1>
+                    <hr>
                 </div>
-            </div>
-            <div class="row">
-                @foreach($articles['result'] as $art)
-                <div class="col-3">
+                @foreach($articles[$i] as $art)
+                <div class="col-6 col-md-4 col-lg-3">
                     <a href="/shop/{{ $art['id'] }}">
-                        <img src="{{ $art['thumbnail_url'] }}" alt="{{ $art['name'] }}" width="90%">
-                        <p>{{ $art['name'] }}</p>
+                        <img src="{{ $art['img'] }}" alt="{{ $art['name'] }}" width="90%">
+                        <p>
+                            {{ $art['name'] }} <br>
+                            €{{ $art['price'] }}
+                        </p>
                     </a>
                 </div>
                 @endforeach
             </div>
+            @endfor
         </div>
     </section>
 @endsection
