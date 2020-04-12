@@ -220,21 +220,36 @@ class Shop extends Controller
             }
         }
         
-        $colors = [];
+        $color = [];
         foreach($result['result']['sync_variants'] as $var){
             $split1 = explode("-", $var['name']);
             $split2 = explode("/", $split1[count($split1)-1]);
             
-            if (in_array(trim($split2[0]), $colors) == false) {
-                array_push($colors, trim($split2[0]));
+            if (in_array(trim($split2[0]), $color) == false && in_array(trim($split2[0]), $sizes) == false) {
+                array_push($color, trim($split2[0]));
             }
+        }
+        $imgs = [];
+        foreach($result['result']['sync_variants'] as $var){
+            $img = $var['files'][count($var['files'])-1]['preview_url'];
+            if (in_array($img, $imgs) == false) {
+                array_push($imgs, $img);
+            }
+        }
+        $colors = [];
+        for($i=0; $i<count($color); $i++){
+            array_push($colors, [
+                'color' => $color[$i],
+                'img' => $imgs[$i]
+            ]);
         }
         
         $data = [
             'name' => $result['result']['sync_product']['name'],
             'img' => $result['result']['sync_product']['thumbnail_url'],
             'sizes' => $sizes,
-            'colors' => $colors
+            'colors' => $colors,
+            'price' => $result['result']['sync_variants'][0]['retail_price'],
         ];
         return view('detail', $data);
     }
