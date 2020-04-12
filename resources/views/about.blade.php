@@ -25,6 +25,12 @@
                 <div class="col-12 col-md-6">
                     <p>Lightweight will help you all the way. We are there for you, with you, together we will go beyond your expectations! Dream big, set goals, a healthy and strong body will give you the boost to continue your dream.</p>
                 </div>
+                <div class="col-12">
+                    <h1>Products</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Lightweight will help you all the way. We are there for you, with you, together we will go beyond your expectations! Dream big, set goals, a healthy and strong body will give you the boost to continue your dream.</p>
+                </div>
             </div>
         </div>
     </header>

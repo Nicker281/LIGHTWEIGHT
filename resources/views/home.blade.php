@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="bgBlack col">
-                    <h1 class="text-center">Challenge us &amp; yourself</h1>
+                    <h1 class="text-center">Challenge us &amp; Yourself</h1>
                     <p class="text-center">Here you will find our latest challenges. Feel free to challenge us aswell!</p>
                 </div>
                 <div class="col-12 col-md-4"></div>
